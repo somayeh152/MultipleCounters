@@ -1,0 +1,98 @@
+@font-face{
+    font-family: 'vazirFD';
+    src: local('Vazir-FD'),
+        url('../font/Farsi-Digits/Vazir-FD.woff') format('woff'),
+        url('../font/Farsi-Digits/Vazir-FD.woff2') format('woff2'),
+        url('../font/Farsi-Digits/Vazir-FD.ttf') format('truetype');
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px; 
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    // font-family: 'vazirFD';
+    font-size: 14px;
+    color: #303030;
+}
+
+.holder{
+    padding: 20px 100px;
+}
+
+#header{
+    h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
+#formHolder{
+    border: 1px solid #303030;
+    padding: 30px;
+    margin: 20px;
+
+    input, button{
+        font-size: 0.85rem; 
+    }
+    span{
+        margin: 0 20px;
+        font-size: 0.85rem;
+    }
+    .error{
+        color: red;
+        display: block;
+    }
+}
+
+#countersHolder{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    .counter{
+        border: 1px solid #303030;
+        width: 200px;
+        height: 250px;
+        border-radius: 5px;
+        margin: 10px;
+
+        .counterHeader{
+            border-bottom: 1px solid #303030;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        .counterBody{
+            text-align: center; 
+            h3{
+                display: block;
+                height: 80%;
+                font-size: 6rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .holder{
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #formHolder{
+        div{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        span{
+            margin: 0px;
+        }
+    }
+}
