@@ -30,18 +30,28 @@ body {
   margin: 20px;
 }
 
-#formHolder input, #formHolder button {
+#formHolder input[type=number] {
   font-size: 0.85rem;
 }
 
+#formHolder button {
+  font-size: 0.85rem;
+  width: 150px;
+  margin: auto;
+}
+
 #formHolder span {
-  margin: 0 20px;
   font-size: 0.85rem;
 }
 
 #formHolder .error {
   color: red;
   display: block;
+}
+
+#formHolder .form-control:focus {
+  -webkit-box-shadow: 0 0 0 0.5rem rgba(51, 59, 66, 0);
+          box-shadow: 0 0 0 0.5rem rgba(51, 59, 66, 0);
 }
 
 #countersHolder {
@@ -65,7 +75,8 @@ body {
 #countersHolder .counter .counterHeader {
   border-bottom: 1px solid #303030;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 0.85rem;
+  font-weight: bold;
 }
 
 #countersHolder .counter .counterBody {
@@ -76,7 +87,22 @@ body {
   display: block;
   height: 80%;
   font-size: 6rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#countersHolder .counter .counterBody button.runBtn {
+  font-size: 0.85rem;
+  width: 150px;
+}
+
+#main .btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem transparent;
+          box-shadow: 0 0 0 0.2rem transparent;
+}
+
+#main .btn:focus {
+  -webkit-box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
 }
 
 @media screen and (max-width: 768px) {

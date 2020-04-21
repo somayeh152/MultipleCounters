@@ -2,12 +2,13 @@ import { createCounter } from './creatCounter.js';
 
 
 // Add new counter
-let addCounterBtn = document.getElementById('addCounterBtn');
+const addCounter = () => {
+    const addCounterBtn = document.getElementById('addCounterBtn');
 
 addCounterBtn.addEventListener("click", function(e){
     e.preventDefault();
-    let addCounterInput = document.getElementById('addCounterInput');
-    let feedback = document.querySelector('.error');
+    const addCounterInput = document.getElementById('addCounterInput');
+    const feedback = document.querySelector('.error');
     
     if(addCounterInput.value === ''){
 
@@ -24,3 +25,6 @@ addCounterBtn.addEventListener("click", function(e){
     }
 });
 
+}
+
+window.onload = addCounter;
